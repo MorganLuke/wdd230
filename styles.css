@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+img {
+    max-width: 100%;
+    height: auto;
+} 
+
+#content {
+    max-width: 450px;
+    align-content: center;
+}
+
+footer {
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 5px;
+    background-color: #3377aa;
+    text-align: center;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.home-grid p {
+    text-align: center;
+}
+
+.banner-box{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 5px;
+    background-color: #3377aa;
+}
+
+.banner-img{
+    max-width: 100px;
+    grid-column: 2 / 4;
+    margin: 5px 0 5px 0;
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 5px;
+}
+
+.banner-headline{
+    text-align: center;
+    grid-column: 4 / 8;
+    color: #fcfdfd;
+}
+
+body{
+    font-family: Roboto, Helvetica, san-serif;
+}
+
+.assignments-list{
+    grid-column: 1 / 9;
+}
+
+.home-headline{
+    grid-column: 1 / 9;
+    border-bottom: 2px solid black;
+    padding: 0px 0 15px 0;
+
+}
+
+main p{
+    grid-column: 1 / 9;
+    border-top: 2px solid black;
+    padding: 15px 0 0 0;
+
+}
+
+.footer-copy{
+    color: #fcfdfd;
+    margin-bottom: 0px;
+    padding-top: 1em;
+}
+
+.footer-update{
+    color: #d3e034;
+    margin-top: 0px;
+padding-bottom: 1em;}
