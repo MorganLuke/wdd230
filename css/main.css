@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 img {
     max-width: 100%;
@@ -50,7 +50,8 @@ footer {
 }
 
 body{
-    font-family: Roboto, Helvetica, san-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .assignments-list{
