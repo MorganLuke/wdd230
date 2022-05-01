@@ -46,7 +46,7 @@ footer {
 .banner-headline{
     text-align: center;
     grid-column: 4 / 8;
-    color: #fcfdfd;
+    color: #3cd1d1;
 }
 
 body{
@@ -60,14 +60,14 @@ body{
 
 .home-headline{
     grid-column: 1 / 9;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #3cd1d1;
     padding: 0px 0 15px 0;
 
 }
 
 main p{
     grid-column: 1 / 9;
-    border-top: 2px solid black;
+    border-top: 2px solid #3cd1d1;
     padding: 15px 0 0 0;
 
 }
