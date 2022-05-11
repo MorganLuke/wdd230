@@ -1,0 +1,141 @@
+
+h1 {
+    margin: auto;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    color: #96897B;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    font-size: 16px;
+
+}
+
+#content {
+    max-width: 960px;
+    margin: auto;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    background-color: #DFD5A5;
+}
+
+h2, p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #3D3D3D;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+} 
+
+footer {
+    box-shadow: 0px 1px 4px 1px #888;
+    border-radius: 0 0 5px 5px;
+    background-color: #628395;
+    text-align: center;
+}
+
+.footer-copy{
+    color: black;
+    padding: .5rem;
+}
+
+/* phone or baseline views **************************/
+header,
+footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+header, main, footer {
+	margin: 0 auto;
+}
+
+nav {
+	margin: 0;
+    background-color: #628395;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #888;
+    border-radius: 5px;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: 0.5s;
+    color: black;
+}
+
+a:hover {
+	background-color: #CF995F;
+    color: black;
+}
+
+table, td, th {
+    border: 1px solid;
+    margin: 0;
+
+  }
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: left;
+ }
+
+h3 {
+      size: 1rem;
+}
+
+table h2, h3 {
+    padding-left: .5rem;
+    text-align: left;
+}
+
+#navigation, #footer{
+    color: black;
+    background-color: #628395;
+    padding: 1rem;
+	text-align: center;
+    margin: 0;
+}
+
+#navigation-hover {
+    padding: 1rem;
+	text-align: center;
+	font-size: 1.25rem;
+    background-color: #CF995F;
+    color: black;
+}
+
+#h2-content, #paragraph{
+    padding: 1rem;
+	text-align: center;
+    color: #3D3D3D;
+    background-color: #DFD5A5;
+    margin: 0;
+}
