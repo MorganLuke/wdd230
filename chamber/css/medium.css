@@ -1,0 +1,10 @@
+@media (min-width: 32.5em) {
+    h1 {
+        font-size: 2.75rem;
+    }
+    
+	/* Horizontal Menu Examples */
+	/* Flex *********************/
+	nav ul { display: flex; }
+	nav ul li { flex: 1 1 auto; } 
+}
