@@ -1,3 +1,113 @@
+/* codepen css */
+header {
+	background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.logo img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+}
+
+.m {
+	letter-spacing: 1pt;
+	color: black;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.social {
+	margin-right: 1.5rem;
+}
+
+.social svg {
+	width: 25px;
+	height: auto;
+}
+
+
+/* main grid */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    grid-auto-rows: minmax(300px, auto);
+  }
+  .event {
+    /* grid-column: 1 / 3; */
+    grid-row: 2;
+    background-color: beige;
+    border: 2px solid #c6c6c6;
+  }
+  .hero {
+    /* grid-column: 1 / 4; */
+    grid-row: 1;
+    background-color: beige;
+    border: 2px solid #c6c6c6;
+  }
+  .spotlight {
+    /* grid-column: 1/4; */
+    grid-row: 5;
+    background-color: beige;
+    border: 2px solid #c6c6c6;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    grid-auto-rows: minmax(300px, auto);
+  }
+
+  .spotlight section {
+    border: 2px solid #c6c6c6;
+  }
+
+  .spot-3 {
+      display: none;
+  }
+  
+  .weather {
+    /* grid-column: 3/4; */
+    grid-row: 3;
+    background-color: beige;
+    border: 2px solid #c6c6c6;
+  }
+  .join {
+    /* grid-column: 1/4;
+    grid-row: 4; */
+    display: none;
+    background-color: beige;
+    border: 2px solid #c6c6c6;
+  }
+  .news {
+    grid-row: 4;
+    background-color: beige;
+    border: 2px solid #c6c6c6;
+  }
+
+
+
+/* Previous CSS */
 
 h1 {
     margin: auto;

@@ -1,53 +1,56 @@
-@media (min-width: 50em) {
+@media (min-width: 65em) {
   h1 {
     font-size: 3.5rem;
     }
 
   .banner-box {
     display: grid;
-    grid-template-columns: .5fr 1fr ;
+    grid-template-columns: .25fr 1fr ;
     }  
   
+    
+  /* main grid */
   .home-grid {
-        display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        gap: 15px;
-        grid-auto-rows: minmax(300px, auto);
+        gap: 1rem;
       }
-      .one {
+
+      .event {
         grid-column: 1 / 2;
-        /* grid-row: 1; */
-        background-color: beige;
-        border: 2px solid gainsboro;
+        grid-row: 1;
       }
-      .two {
+
+      .hero {
         grid-column: 2 / 3;
         grid-row: 1 / 3;
-        background-color: beige;
-        border: 2px solid gainsboro;
       }
-      .three {
+
+      .spotlight {
         grid-column: 3/4;
         grid-row: 1 / 4;
-        background-color: beige;
-        border: 2px solid gainsboro;
+        grid-template-columns: 1fr;
       }
-      .four {
+
+      .spot-2, .spot-3 {
         grid-column: 1/2;
-        /* grid-row: 2; */
-        background-color: beige;
-        border: 2px solid gainsboro;
       }
-      .five {
+
+      .spot-3 {
+        display: block;
+      }
+
+      .weather {
         grid-column: 1/2;
-        /* grid-row: 3; */
-        background-color: beige;
-        border: 2px solid gainsboro;
+        grid-row: 2;
       }
-      .six {
+
+      .join {
+        grid-column: 1/2;
+        grid-row: 3;
+      }
+
+      .news {
         grid-column: 2/3;
-        /* grid-row: 3; */
-        background-color: beige;
-        border: 2px solid gainsboro;
+        grid-row: 3;
       }
 }

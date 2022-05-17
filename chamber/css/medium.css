@@ -1,10 +1,65 @@
 @media (min-width: 32.5em) {
-    h1 {
-        font-size: 2.75rem;
-    }
+	header img {
+		width: 300px;
+	}
+
+	.headings h1 {
+		font-size: 2.75rem;
+		margin: 0;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: 0.9rem;
+	}
+
     
 	/* Horizontal Menu Examples */
 	/* Flex *********************/
 	nav ul { display: flex; }
 	nav ul li { flex: 1 1 auto; } 
+
+	
+/* main grid */
+	.home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .event {
+        grid-column: 1 / 3;
+        grid-row: 5;
+      }
+
+      .hero {
+        grid-column: 1 / 4;
+      }
+      .spotlight {
+        grid-column: 1/4;
+        grid-row: 3;
+        grid-template-columns: 1fr 1fr;
+      }
+
+	  .spot-1 {
+		  grid-column: 1/2;
+	  }
+
+	  .spot-2 {
+		  grid-column: 2/3;
+	  }
+
+      .weather {
+        grid-column: 3/4;
+        grid-row: 5;
+      }
+
+      .join {
+		display: block;
+        grid-column: 1/4;
+        grid-row: 4;
+      }
+
+      .news {
+        grid-column: 1/4;
+        grid-row: 2;
+      }
 }
