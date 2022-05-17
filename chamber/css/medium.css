@@ -13,6 +13,9 @@
 		font-size: 0.9rem;
 	}
 
+  .logo img {
+    width: 120px;
+  }
     
 	/* Horizontal Menu Examples */
 	/* Flex *********************/
