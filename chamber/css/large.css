@@ -1,17 +1,12 @@
 @media (min-width: 65em) {
-  h1 {
-    font-size: 3.5rem;
+  .headings h1 {
+    font-size: 2rem;
     }
 
     .logo img {
-      width: 300px;
+      width: 150px;
     }
     
-  /* .banner-box {
-    display: grid;
-    grid-template-columns: .25fr 1fr ;
-    }  
-   */
     
   /* main grid */
   .home-grid {

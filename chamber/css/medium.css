@@ -1,10 +1,10 @@
 @media (min-width: 32.5em) {
 	header img {
-		width: 300px;
+		width: 120px;
 	}
 
 	.headings h1 {
-		font-size: 2.75rem;
+		/* font-size: 2.75rem; */
 		margin: 0;
 	}
 
@@ -14,10 +14,10 @@
 	}
 
   .logo img {
-    width: 120px;
+    /* width: 120px; */
   }
     
-	/* Horizontal Menu Examples */
+	Horizontal Menu Examples
 	/* Flex *********************/
 	nav ul { display: flex; }
 	nav ul li { flex: 1 1 auto; } 
