@@ -18,24 +18,27 @@
 <body>
     <div id="content">
         <header>
-            <img src="images/mountain-logo.png" alt="mountain logo">
-            <div class="headings">
-                <h1>Auberry Chamber</h1>
-                <div class="m">of Commerce</div>
+            <div class="banner">
+                <img class="logo" src="images/mountain-logo.png" alt="mountain logo">
+                <div class="headings">
+                    <h1>Auberry Chamber</h1>
+                    <div class="m">of Commerce</div>
+                </div>
+                <nav>
+                    <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="#" class="active">Discover</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-logo.png" alt="inatagram logo"></a>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="facebook logo"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-logo.png" alt="inatagram logo"></a>
-            </div>
-            <p><span id="date"></span></p>
+            <div class="banner-date"><span id="date"></span></div>
         </header>
 
         <main>
@@ -60,24 +63,21 @@
         </main>
         
         <footer>
-            <div class="logo">
-                <picture>
-                    <img src="images/mountain-logo.png" alt="mountain logo">
-                </picture>
-                <section class="address">
-                    <h2 >Auberry Chamber of Commerce</h2>
-                    <div>
-                        <p>10 Auberry Rd.</p>
-                        <p>Auberry, CA 93602</p>
-                    </div>
-                </section>
-                <section>
-                    <p><a href = "mailto: info@auberrychamber.com">info@auberrychamber.com</a></p>
-                    <p><a href="tel:+13335657801">+1 333 565 7801</a></p>
-                    <p><a href="https://goo.gl/maps/1Y3TK24JyqKDiLmk7"> Location Map</a></p>
-
-                </section>
-            </div>    
+            <div class="footer-logo" >
+                <img src="images/mountain-logo.png" alt="mountain logo">
+            </div>
+            <div class="address">
+                <h2 >Auberry Chamber of Commerce</h2>
+                <div>
+                    <p>10 Auberry Rd.</p>
+                    <p>Auberry, CA 93602</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p><a href = "mailto: info@auberrychamber.com">info@auberrychamber.com</a></p>
+                <p><a href="tel:+13335657801">+1 333 565 7801</a></p>
+                <p><a href="https://goo.gl/maps/1Y3TK24JyqKDiLmk7"> Location Map</a></p>
+            </div>
             <p class="footer-copy">&copy; <span id="currentDate"></span> Auberry Chamber | Morgan Luke | WDD 230 Project | 
                 Last Modification: <span id="update"></span></p>
             <script src="js/main.js"></script>

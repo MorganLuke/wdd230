@@ -1,34 +1,26 @@
-/* codepen css */
 header {
 	background-color: #628395;
 	padding: 5px 0;
-  /* display: grid; */
-  /* grid-template-columns: 1.25fr 2fr .5fr; */
-	display: flex;
-  flex-flow: row;
-  align-items: center;
-	justify-content: center;
-	/* max-width: 900px; */
+  display: grid;
+  grid-template-columns: 1fr;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
 }
 
-.logo {
-	/* display: flex; */
-	align-items: center;
-  margin: 0;
-  width: 120px;
-	/* margin-left: 1rem; */
+.banner {
+	display: flex;
+  flex-flow: row;
+  align-items: center;
+	justify-content: center;
 }
 
-.logo img {
-	width: 80px;
-	height: auto;
-  /* grid-column: 1/2; */
+.logo {
+	align-items: center;
+  margin: 0;
+  width: 100px;
 }
 
 .headings {
-  /* grid-column: 2/3; */
 	display: flex;
 	flex-direction: column;
 	margin-left: .5rem;
@@ -36,6 +28,7 @@ header {
 
 .headings h1 {
 	font-size: 1.5rem;
+  margin: 0;
 }
 
 h1 {
@@ -55,46 +48,39 @@ h1 {
 }
 
 .social {
-	margin-right: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  /* grid-column: 4/5; */
+  display: none;
 }
-
-.social img {
-	width: 75px;
-	height: auto;
-  padding: 10px;
-  margin: 1rem;
-}
-
 
 /* Nav */
-nav {
-    /* grid-column: 3/4; */
-	  margin: 0 0 0 1rem;
-    background-color: #628395;
-    width: 100%;
-    /* box-shadow: 1px 1px 1px 1px #888; */
-    /* border-radius: 5px; */
+nav button {
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: black;
+}
 
+nav {
+    background-color: #628395;
 }
 
 nav ul {
-	  list-style-type: none;
-	  overflow: hidden;
-    padding-left: 0;
-    margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 nav ul li a {
 	display: block;
-	text-align: center;
-	padding: 1rem;
+  padding: .8rem 2vw;
 	text-decoration: none;
-	/* font-size: 1.25rem; */
-	/* transition: 0.5s; */
+	font-size: 1.25rem;
   color: black;
+}
+
+nav ul li.active a {
+  background-color: rgba(0,0,0,0.2);
+  color: #fff;
 }
 
 a:hover {
@@ -102,8 +88,36 @@ a:hover {
   color: black;
 }
 
+nav ul {
+  display: none;
+}
 
-/* Previous CSS */
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+.banner-date {
+  text-align: center;
+  padding: .5rem;
+}
+
+
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -111,13 +125,7 @@ body{
     font-size: 16px;
 }
 
-#content {
-    /* max-width: 960px; */
-    margin: auto;
-}
-
-
-h2, p {
+p {
     padding-left: 2rem;
     padding-right: 2rem;
     color: black;
@@ -128,22 +136,21 @@ img {
     height: auto;
 } 
 
-main, footer {
-	margin: 0 auto;
-}
-
 footer {
-	display: flex;
-	flex-flow: column;
 	align-items: center;
 	justify-content: center;
+  box-shadow: 0px 1px 4px 1px #888;
+  border-radius: 0 0 5px 5px;
+  background-color: #628395;
+  text-align: center;
 }
 
-footer {
-    box-shadow: 0px 1px 4px 1px #888;
-    border-radius: 0 0 5px 5px;
-    background-color: #628395;
-    text-align: center;
+.footer-logo img{
+  max-width: 200px;
+}
+
+.contact-info a {
+  color: black;
 }
 
 .footer-copy{
@@ -163,21 +170,18 @@ footer {
   }
 
   .event {
-    /* grid-column: 1 / 3; */
     grid-row: 2;
     background-color: beige;
     border: 2px solid #c6c6c6;
   }
 
   .hero {
-    /* grid-column: 1 / 4; */
     grid-row: 1;
     background-color: beige;
     border: 2px solid #c6c6c6;
   }
   
   .spotlight {
-    /* grid-column: 1/4; */
     grid-row: 5;
     background-color: beige;
     border: 2px solid #c6c6c6;
@@ -196,18 +200,17 @@ footer {
   }
   
   .weather {
-    /* grid-column: 3/4; */
     grid-row: 3;
     background-color: beige;
     border: 2px solid #c6c6c6;
   }
+
   .join {
-    /* grid-column: 1/4;
-    grid-row: 4; */
     display: none;
     background-color: beige;
     border: 2px solid #c6c6c6;
   }
+
   .news {
     grid-row: 4;
     background-color: beige;
