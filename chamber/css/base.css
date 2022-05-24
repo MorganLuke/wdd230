@@ -270,7 +270,7 @@ footer {
   margin: 0;
 }
 
-.join{
+.join, .event, .news, .weather{
   text-align: center;
   position: relative;
   background-color: #628395;
