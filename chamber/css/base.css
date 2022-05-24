@@ -131,7 +131,7 @@ body{
     font-size: 16px;
 }
 
-p {
+h2, p {
     padding-left: 2rem;
     padding-right: 2rem;
     color: black;
@@ -185,11 +185,12 @@ footer {
     grid-row: 1;
     background-color: beige;
     border: 2px solid #c6c6c6;
+    position: relative;
   }
   
   .spotlight {
     grid-row: 5;
-    background-color: beige;
+    background-color: #628395;
     border: 2px solid #c6c6c6;
     display: grid;
     grid-template-columns: 1fr;
@@ -224,9 +225,74 @@ footer {
   }
 
 
+/* content */
+/* hero */
+.hero {
+  position: relative;
+}
 
+.hero img {
+  height: 100%;
+}
 
+.hero h2 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 3rem;
+}
 
+.join-cham {
+  position: absolute;
+  bottom: 60px;
+  right: 50px;
+  border: 2px solid #c6c6c6;
+	padding: 1rem;
+	box-shadow: 0 0 5px #333;
+  border-radius: 5px;
+	opacity: 0.9;
+  background-color: #628395;
+}
 
+.join-cham:hover, .join-us:hover {
+	background-color: #CF995F;
+  color: black;
+}
 
+/* spotlight 1 */
+.spot-1, .spot-2, .spot-3{
+  text-align: center;
+}
+
+.spot-contact {
+  border-top: 2px solid black;
+  padding: .5rem;
+  margin: 0;
+}
+
+.join{
+  text-align: center;
+  position: relative;
+  background-color: #628395;
+}
+
+.join-us {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  display: block;
+  width: 95%;
+  border: 2px solid #c6c6c6;
+	padding: 2rem;
+	box-shadow: 0 0 5px #333;
+  border-radius: 5px;
+	opacity: 0.9;
+  background-color: rgb(255, 187, 0);
+  font-size: 3rem;
+}
+
+.join p {
+  position: absolute;
+  top: 55%;
+}
 
