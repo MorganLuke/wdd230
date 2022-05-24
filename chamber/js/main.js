@@ -16,3 +16,9 @@ function toggleMenu () {
 
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
+
+// banner popup
+let dayOfWeek = date.getDay();
+//if lands on a sunday(0) or a saturday(6) the date is adjusted to a monday
+if (dayOfWeek == 1 || dayOfWeek == 2) {document.querySelector('#banner-popup').style.display = 'block';}
+else {document.querySelector('#banner-popup').style.display = 'none';};

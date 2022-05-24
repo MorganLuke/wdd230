@@ -5,6 +5,13 @@ header {
   grid-template-columns: 1fr;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
+  border-radius: 5px 5px 0 0;
+}
+
+#banner-popup {
+  text-align: center;
+  font-size: .75rem;
+  border-bottom: 1px solid #bbb;
 }
 
 .banner {
@@ -23,7 +30,6 @@ header {
 .headings {
 	display: flex;
 	flex-direction: column;
-	margin-left: .5rem;
 }
 
 .headings h1 {
