@@ -227,12 +227,10 @@ footer {
 
 /* content */
 /* hero */
-.hero {
-  position: relative;
-}
 
-.hero img {
-  height: 100%;
+
+.heroimg {
+  display: block;
 }
 
 .hero h2 {

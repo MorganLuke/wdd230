@@ -28,7 +28,7 @@
                     <div class="m">of Commerce</div>
                 </div>
                 <nav>
-                    <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                     <ul id="primaryNav">
                         <li><a href="#" class="active">Discover</a></li>
                         <li><a href="#">Directory</a></li>
@@ -56,7 +56,13 @@
                     <p>There will be produce, craft and food vendors in atendance. Come mingle and feel the heart of the community. <a href="#">more info...</a></p>
                 </div>
                 <div class="hero">
-                    <img src="https://placeimg.com/1000/1000/nature" alt="nature image">
+                    <picture class="heroimg">
+                        <source media="(max-width: 608px)" srcset="images/heroimgsmall600.jpg">
+                        <source media="(max-width: 1039px)" srcset="images/heroimgmedium1038.jpg">
+                        <source media="(max-width: 2000px)" srcset="images/heroimglarge1500.jpg">
+                        <img src="images/heroimglarge1500.jpg" alt="Hero Img">
+                    </picture>
+                    
                     <h2>Welcome to Auberry</h2>
                     <button class="join-cham" onclick="window.location.href='#';">Join the Chamber</button>
                 </div>
