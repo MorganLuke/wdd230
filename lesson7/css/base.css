@@ -1,11 +1,19 @@
 
-.content {
+body {
     display: grid;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
 picture {
     margin: 10px;
 }
+
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 2s;
+  }
