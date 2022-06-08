@@ -7,6 +7,10 @@
   font-size: 1.5rem;
 }
 
+
+
+
+
 /*menu */
 nav button {
   display: none;
@@ -21,6 +25,9 @@ nav ul#primaryNav {
 .social img {
   width: 75px;
 }
+
+
+
 
 /* main grid */
 .home-grid {

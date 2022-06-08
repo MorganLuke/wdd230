@@ -22,7 +22,7 @@
                 <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
             </div>
             <div class="banner">
-                <img class="logo" src="images/mountain-logo.png" alt="mountain logo">
+                <img class="logo" src="images/mountain-logo.webp" alt="mountain logo">
                 <div class="headings">
                     <h1>Auberry Chamber</h1>
                     <div class="m">of Commerce</div>
@@ -59,7 +59,7 @@
                     <picture class="heroimg">
                         <source media="(max-width: 608px)" srcset="images/heroimgsmall600.jpg">
                         <source media="(max-width: 1039px)" srcset="images/heroimgmedium1038.jpg">
-                        <source media="(max-width: 2000px)" srcset="images/heroimglarge1500.jpg">
+                        <source media="(max-width: 2000px)" srcset="images/heroimglarge928.jpg">
                         <img src="images/heroimglarge1500.jpg" alt="Hero Img">
                     </picture>
                     
@@ -96,6 +96,10 @@
                 </div>
                 <div class="weather">
                     <h2>Weather</h2>
+                    <h3><span id="temperature">30</span>&#176;F</h3>
+                    <h3>Partly Cloudy</h3>
+                    <p>Wind Speed: <span id="windspeed">4</span> mph</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
                 </div>
                 <div class="join">
                     <button class="join-us" onclick="window.location.href='#';">Join Us!</button>
@@ -131,6 +135,7 @@
             <p class="footer-copy">&copy; <span id="currentDate"></span> Auberry Chamber | Morgan Luke | WDD 230 Project | 
                 Last Modification: <span id="update"></span></p>
             <script src="js/main.js"></script>
+            <script src="js/windchill.js"></script>
         </footer>
         </div>
 </body>

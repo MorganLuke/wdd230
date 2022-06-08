@@ -57,6 +57,9 @@ h1 {
   display: none;
 }
 
+
+
+
 /* Nav */
 nav button {
   margin: .2rem 2vw;
@@ -124,6 +127,9 @@ nav ul.open {
 }
 
 
+
+
+
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -139,7 +145,7 @@ h2, p {
 
 img {
     max-width: 100%;
-    height: auto;
+
 } 
 
 footer {
@@ -165,6 +171,10 @@ footer {
     padding: .5rem;
 }
 
+
+
+
+
 /* main grid */
 .home-grid {
     display: grid;
@@ -177,7 +187,7 @@ footer {
 
   .event {
     grid-row: 2;
-    background-color: beige;
+    /* background-color: beige; */
     border: 2px solid #c6c6c6;
   }
 
@@ -208,26 +218,29 @@ footer {
   
   .weather {
     grid-row: 3;
-    background-color: beige;
+    /* background-color: beige; */
     border: 2px solid #c6c6c6;
   }
 
   .join {
     display: none;
-    background-color: beige;
+    /* background-color: beige; */
     border: 2px solid #c6c6c6;
   }
 
   .news {
     grid-row: 4;
-    background-color: beige;
+    /* background-color: beige; */
     border: 2px solid #c6c6c6;
   }
 
 
+
+
+
+
 /* content */
 /* hero */
-
 
 .heroimg {
   display: block;
@@ -256,6 +269,9 @@ footer {
 	background-color: #CF995F;
   color: black;
 }
+
+
+
 
 /* spotlight 1 */
 .spot-1, .spot-2, .spot-3{
@@ -292,5 +308,11 @@ footer {
 .join p {
   position: absolute;
   top: 55%;
+}
+
+.weather :nth-child(2) {
+  font-size: 3rem;
+  color: white;
+  margin: 1rem;
 }
 
