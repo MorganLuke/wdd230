@@ -2,6 +2,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.container {
+	overflow-x: auto;
+}
 :root {
 	--back: #7fb9c2;
   	--back2: #628ca6;
