@@ -323,24 +323,29 @@ footer {
 
 
 
-/* Lazy Load Discover Page */
+/* Discover Page */
 .content {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: #DFD5A5;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-
-.content picture {
-  margin: 10px;
-}
-
 
 .content img[data-src] {
   filter: blur(0.2em);
 }
 
-.comtent img {
+.content img {
   filter: blur(0em);
-  transition: filter 2s;
+  transition: filter 1s;
 }
+
+.content p {
+  max-width: 650px;
+  padding: .75rem;
+  margin: 0 0 1.5rem 0;
+}
+
