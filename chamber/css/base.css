@@ -57,6 +57,11 @@ h1 {
   display: none;
 }
 
+a:link, a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 
 
 
