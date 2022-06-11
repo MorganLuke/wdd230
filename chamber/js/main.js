@@ -23,8 +23,9 @@ let dayOfWeek = date.getDay();
 if (dayOfWeek == 1 || dayOfWeek == 2) {document.querySelector('#banner-popup').style.display = 'block';}
 else {document.querySelector('#banner-popup').style.display = 'none';};
 
-// lazy load
 
+
+// lazy load
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
