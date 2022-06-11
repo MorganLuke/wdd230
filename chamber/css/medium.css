@@ -24,7 +24,8 @@
   padding-top: .75rem;
 }
 
-
+/* hover effect Images Discover Page*/
+.content picture:hover {box-shadow: 0 0 50px #333;}
 
 
 /* footer  */
