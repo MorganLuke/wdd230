@@ -329,7 +329,7 @@ footer {
 
 
 /* Discover Page */
-.content {
+.discontent {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -339,16 +339,16 @@ footer {
   width: 100%;
 }
 
-.content img[data-src] {
+.discontent img[data-src] {
   filter: blur(0.2em);
 }
 
-.content img {
+.discontent img {
   filter: blur(0em);
   transition: filter 1s;
 }
 
-.content p {
+.discontent p {
   max-width: 650px;
   padding: .75rem;
   margin: 0 0 1.5rem 0;
