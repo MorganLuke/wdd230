@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the fun things to do in and around the town of Auberry - Auberry Chamber of Commerce">
-    <title>Discover - Auberry Chamber of Commerce</title>
+    <meta name="description" content="Join and become a member of the Auberry Chamber of Commerce to be part of the community">
+    <title>Join - Auberry Chamber of Commerce</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,50 @@
 
         <main>
             <div class="joincontent">
-               
+                <main>
+                    <h1>📧 Send Us a Message</h1>
+                    <form action="thankyou.html" method="get">
+                        <input type="hidden" id="custId" name="custId" value= >
+                        <div id="message"></div>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" required placeholder="Enter your first name" />
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" required />
+                        <!-- add regular expression -->
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" />
+                        <label for="businessDesc">Business Description:</label>
+                        <textarea id="businessDesc" name="businessDesc" minlength="2" maxlength="140" rows="4" ></textarea>
+                        
+
+                        <label for="email">Email address:</label>
+                        <input type="text" id="email" name="email" required />
+                        <label for="phone">Phone number:</label>
+                        <input type="phone" id="phone" name="phone" />
+                        <label for="keyphrase">Key Phrase:</label>
+                        <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
+                        <label for="keyphrase2">Re-enter Key Phrase:</label>
+                        <input type="text" id="keyphrase2" name="keyphrase2" />
+                
+                        <label for="comments">Message:</label>
+                        <textarea id="comments" name="comments" required></textarea>
+
+                        <fieldset class="memberships">
+                            <legend>Memberships</legend>
+                            <input type="radio" required name="membership" id="radio1" value="npMember">
+                            <label for="radio1">NP Membership is for non profit organizations and there is no fee.</label>
+                            <input type="radio" required name="membership" id="radio2" value="bronzeMember">
+                            <label for="radio2">Bronze Membership</label>
+                            <input type="radio" required name="membership" id="radio3" value="silverMember">
+                            <label for="radio3">Silver Membership</label>
+                            <input type="radio" required name="membership" id="radio4" value="goldMember">
+                            <label for="radio4">Gold Membership</label>
+                        </fieldset>
+                        
+                        <button id="btnSubmit" type="submit">Send Message</button>
+                        <input type="hidden" value="4">
+                    </form>
+                </main>
 
 
 

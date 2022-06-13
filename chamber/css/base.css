@@ -336,7 +336,7 @@ footer {
 
 
 /* Discover Page */
-.discontent {
+.discontent, .joincontent {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -365,6 +365,24 @@ footer {
 
 /* Join Page */
 
-.joincontent {
-  background-color: #DFD5A5;
+.joincontent form{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+}
+
+.joincontent label {
+  grid-column: 1/2;
+  text-align: right;
+}
+
+.joincontent input, button {
+  grid-column: 2/3;
+}
+
+.memberships {
+  grid-column: 3/4;
+  grid-row: 2/6;
 }
