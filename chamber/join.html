@@ -47,45 +47,62 @@
                 <main>
                     <h1>📧 Send Us a Message</h1>
                     <form action="thankyou.html" method="get">
-                        <input type="hidden" id="custId" name="custId" value= >
-                        <div id="message"></div>
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname" required placeholder="Enter your first name" />
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname" required />
-                        <!-- add regular expression -->
-                        <label for="title">Title:</label>
-                        <input type="text" id="title" name="title" />
-                        <label for="businessDesc">Business Description:</label>
-                        <textarea id="businessDesc" name="businessDesc" minlength="2" maxlength="140" rows="4" ></textarea>
-                        
+                        <!-- hidden date logged when form loads -->
+                        <input type="hidden" id="loadDate" name="loadDate" value= >
 
+                        <div id="message"></div>
+                        
+                        <!-- first name -->
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" minlength="2" maxlength="20" pattern="^[A-Za-z-]*$" required autofocus/>
+                        
+                        <!-- last name -->
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"  minlength="2" maxlength="20" pattern="^[A-Za-z-]*$" required />
+
+                        <!-- business name -->
+                        <label for="busName">Business Name:</label>
+                        <input type="text" id="busName" name="busName" maxlength="50" required/>
+
+                        <!-- business position title -->
+                        <label for="positionTitle">Business position title:</label>
+                        <input type="text" id="positionTitle" name="positionTitle" minlength="8" maxlength="50" pattern="^[A-Za-z-]*$"/>
+                        
+                        <!-- email address -->
                         <label for="email">Email address:</label>
-                        <input type="text" id="email" name="email" required />
-                        <label for="phone">Phone number:</label>
-                        <input type="phone" id="phone" name="phone" />
-                        <label for="keyphrase">Key Phrase:</label>
-                        <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
-                        <label for="keyphrase2">Re-enter Key Phrase:</label>
-                        <input type="text" id="keyphrase2" name="keyphrase2" />
-                
-                        <label for="comments">Message:</label>
-                        <textarea id="comments" name="comments" required></textarea>
+                        <input type="email" id="email" required name="email" maxlength="30" placeholder="myemailname@gmail.com" required/>
+                        
+                        <!-- cell phone number -->
+                        <label for="phone">Cell phone number:</label>
+                        <input type="tel" id="phone" required name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"/>
+                        
+                        <!-- business description -->
+                        <label for="businessDesc">Business Description:</label>
+                        <textarea id="businessDesc" name="businessDesc" maxlength="140" rows="4" ></textarea>
 
                         <fieldset class="memberships">
-                            <legend>Memberships</legend>
+                            <legend>Membership Levels</legend>
+                            <!-- non profit membership -->
                             <input type="radio" required name="membership" id="radio1" value="npMember">
-                            <label for="radio1">NP Membership is for non profit organizations and there is no fee.</label>
+                            <label for="radio1" >Non-Profit Organizations<abbr title="NP Membership is for non profit organizations and there is no fee." aria-label="required"> *</abbr></label>
+                            <br>
+                            <!-- bronze membership -->
                             <input type="radio" required name="membership" id="radio2" value="bronzeMember">
                             <label for="radio2">Bronze Membership</label>
+                            <br>
+                            <!-- silver membership -->
                             <input type="radio" required name="membership" id="radio3" value="silverMember">
                             <label for="radio3">Silver Membership</label>
+                            <br>
+                            <!-- gold membership -->
                             <input type="radio" required name="membership" id="radio4" value="goldMember">
                             <label for="radio4">Gold Membership</label>
                         </fieldset>
                         
-                        <button id="btnSubmit" type="submit">Send Message</button>
-                        <input type="hidden" value="4">
+                        <!-- submit button -->
+                        <button id="btnSubmit" type="submit">Submit</button>
+                        
+                                           
                     </form>
                 </main>
 

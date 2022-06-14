@@ -336,7 +336,7 @@ footer {
 
 
 /* Discover Page */
-.discontent, .joincontent {
+.discontent, .joincontent{
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -376,6 +376,13 @@ footer {
 .joincontent label {
   grid-column: 1/2;
   text-align: right;
+  font-weight: 700;
+}
+
+.joincontent input, textarea {
+	margin: 0.5em;
+	padding: 0.4em;
+	font-style: italic;
 }
 
 .joincontent input, button {
@@ -385,4 +392,39 @@ footer {
 .memberships {
   grid-column: 3/4;
   grid-row: 2/6;
+}
+
+.memberships {
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
+  text-align: left;
+}
+
+#btnSubmit {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px coral;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
+textarea:invalid {
+  box-shadow: 0 0 5px 1px coral;
+}
+
+
+/* Thank you page */
+.thankcontent {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  background-color: #DFD5A5;
 }
