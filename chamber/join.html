@@ -44,14 +44,11 @@
 
         <main>
             <div class="joincontent">
-                <main>
-                    <h1>📧 Send Us a Message</h1>
+                    <h1>Application For Membership</h1>
                     <form action="thankyou.html" method="get">
-                        <!-- hidden date logged when form loads -->
-                        <input type="hidden" id="loadDate" name="loadDate" value= >
+                        <!-- hidden date and time logged when form loads -->
+                        <input type="hidden" id="loadDate" name="loadDate">
 
-                        <div id="message"></div>
-                        
                         <!-- first name -->
                         <label for="fname">First name:</label>
                         <input type="text" id="fname" name="fname" minlength="2" maxlength="20" pattern="^[A-Za-z-]*$" required autofocus/>
@@ -84,36 +81,37 @@
                             <legend>Membership Levels</legend>
                             <!-- non profit membership -->
                             <input type="radio" required name="membership" id="radio1" value="npMember">
-                            <label for="radio1" >Non-Profit Organizations<abbr title="NP Membership is for non profit organizations and there is no fee." aria-label="required"> *</abbr></label>
+                            <label for="radio1" >Non-Profit Organizations</label>
+                            <p>NP Membership is for non profit organizations and there is no fee.</p>
                             <br>
                             <!-- bronze membership -->
                             <input type="radio" required name="membership" id="radio2" value="bronzeMember">
-                            <label for="radio2">Bronze Membership</label>
+                            <label for="radio2">Bronze Membership - $500 Annually</label>
+                            <p>4 Facebook business posts per year</p>
+                            <p>Access to all members mailing list</p>
                             <br>
                             <!-- silver membership -->
                             <input type="radio" required name="membership" id="radio3" value="silverMember">
-                            <label for="radio3">Silver Membership</label>
+                            <label for="radio3">Silver Membership - $1,000 Annually</label>
+                            <p>8 Facebook business posts per year</p>
+                            <p>Access to all members mailing list</p>
+                            <p>Use bulk mail permit</p>
+                            <p>Name printed in Directory Listing</p>
                             <br>
                             <!-- gold membership -->
                             <input type="radio" required name="membership" id="radio4" value="goldMember">
-                            <label for="radio4">Gold Membership</label>
+                            <label for="radio4">Gold Membership - $2,500 Annually</label>
+                            <p>12 Facebook business posts per year</p>
+                            <p>Access to all members mailing list</p>
+                            <p>Use bulk mail permit</p>
+                            <p>Photo printed in Directory Listing</p>
+                            <p>Your logo on all chamber e-blasts</p>
+                            <p>Chamber event banner with your logo</p>
                         </fieldset>
                         
                         <!-- submit button -->
                         <button id="btnSubmit" type="submit">Submit</button>
-                        
-                                           
                     </form>
-                </main>
-
-
-
-
-
-
-
-
-                
             </div>
         </main>
         
@@ -136,6 +134,7 @@
             <p class="footer-copy">&copy; <span id="currentDate"></span> Auberry Chamber | Morgan Luke | WDD 230 Project | 
                 Last Modification: <span id="update"></span></p>
             <script src="js/main.js"></script>
+            <script src="js/loaddate.js"></script>
         </footer>
         </div>
 </body>

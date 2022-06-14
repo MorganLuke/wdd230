@@ -74,4 +74,12 @@ nav ul#primaryNav {
   grid-row: 3;
 }
 
+.joincontent form{
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.memberships {
+  grid-column: 3/4;
+  grid-row: 1/10;
+}
 }

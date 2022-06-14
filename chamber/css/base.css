@@ -274,7 +274,7 @@ footer {
 	box-shadow: 0 0 5px #333;
   border-radius: 5px;
 	opacity: 0.9;
-  background-color: #628395;
+  background-color: rgb(255, 187, 0);
 }
 
 .join-cham:hover, .join-us:hover {
@@ -367,10 +367,14 @@ footer {
 
 .joincontent form{
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  width: 900px;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
+}
+
+.joincontent h1 {
+  margin: 1rem;
 }
 
 .joincontent label {
@@ -380,7 +384,7 @@ footer {
 }
 
 .joincontent input, textarea {
-	margin: 0.5em;
+	margin: 1rem;
 	padding: 0.4em;
 	font-style: italic;
 }
@@ -389,30 +393,24 @@ footer {
   grid-column: 2/3;
 }
 
-.memberships {
-  grid-column: 3/4;
-  grid-row: 2/6;
+.memberships legend {
+  font-size: 2rem;
 }
 
 .memberships {
-  padding: 1rem;
-  margin: 1rem;
-  width: 300px;
+  margin: 0 1rem 1rem 1rem;
   text-align: left;
+  grid-column: 2/3;
 }
 
 #btnSubmit {
-  margin: 1rem 0;
+  margin: 1rem 1rem 2rem 1rem;
   padding: 1rem;
   border-radius: 5px;
 }
 
 input:invalid {
   box-shadow: 0 0 5px 1px coral;
-}
-
-input:focus:invalid {
-  box-shadow: none;
 }
 
 textarea:invalid {
