@@ -64,7 +64,7 @@ h1 {
   display: none;
 }
 
-a:link, a:hover {
+a:link, a:visited {
   text-decoration: none;
   color: black;
 }
@@ -102,11 +102,6 @@ nav ul li a {
 nav ul li.active a {
   background-color: rgba(0,0,0,0.2);
   color: #fff;
-}
-
-a:hover {
-	background-color: #CF995F;
-  color: black;
 }
 
 nav ul {
@@ -277,7 +272,7 @@ footer {
   background-color: rgb(255, 187, 0);
 }
 
-.join-cham:hover, .join-us:hover {
+.join-cham:hover, .join-us:hover, nav a:hover {
 	background-color: #CF995F;
   color: black;
 }
