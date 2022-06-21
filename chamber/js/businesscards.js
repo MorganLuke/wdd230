@@ -19,7 +19,7 @@ function showList() {
 
 
 // Business Cards
-const URL = 'https://morganluke.github.io/wdd230/chamber/json/data.json';
+const URL = 'json/data.json';
 const cards = document.querySelector('.cards');
 
 async function getBusinesses() {
@@ -41,12 +41,14 @@ function buildBusinessCards(data) {
         let p = document.createElement('p');
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
+        let p4 = document.createElement('p')
         let img = document.createElement('img');
                 
         h2.innerHTML = `${business.name}`;
         p.innerHTML = `${business.address}`;
         p2.innerHTML = `${business.phone}`;
         p3.innerHTML = `${business.website}`;
+        p4.innerHTML = `${business.membership}`;
                 
         img.setAttribute('src', business.imageurl);
         img.setAttribute('alt', `${business.name} business logo`);
@@ -57,8 +59,8 @@ function buildBusinessCards(data) {
         card.append(p);
         card.append(p2);
         card.append(p3);
+        card.append(p4);
 
-                
         cards.append(card);
     });
 }
