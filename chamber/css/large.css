@@ -8,9 +8,6 @@
 }
 
 
-
-
-
 /*menu */
 nav button {
   display: none;
@@ -25,8 +22,6 @@ nav ul#primaryNav {
 .social img {
   width: 75px;
 }
-
-
 
 
 /* main grid */
@@ -82,17 +77,17 @@ nav ul#primaryNav {
   grid-column: 3/4;
   grid-row: 1/10;
 }
-}
 
-
+/* Directory Page */
 .cardbanner {
   display: flex;
   flex-direction: row;
 }
 
-.cardbanner button {
-  width: 60px;
-  height: 60px;
-  margin: .5rem;
-  
+/* used for layout buttons */
+.list section {
+  grid-template-columns: repeat(5, 1fr);
+  text-align: left;
+}
+
 }

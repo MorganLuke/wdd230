@@ -2,65 +2,91 @@
     "businesses": [
       {
         "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
+        "address": "10991 Auberry Road Auberry CA 93602",
+        "phone": "(559) 855-5858",
         "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
+        "membership": "Gold Membership",
+        "imageurl": "images/cornerstoneconcrete300.jpg"
       },
       {
         "name": "Mountain Flame Propane",
         "address": "33041 Auberry Rd St 104 Auberry CA 93602",
-        "phone": "(559)855-5955",
-        "website": "https://mountainflamepropane.com/",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
-      },{
-        "name": "Cornerstone Concrete",
-        "address": "1234 Auberry Road Auberry CA 93602",
-        "phone": "(559)555-5555",
-        "website": "https://cornerstoneconcrete.com",
-        "imageurl": ""
+        "phone": "(559) 855-5955",
+        "website": "https://mountainflamepropane.com",
+        "membership": "Silver Membership",
+        "imageurl": "images/mountainflame300.jpg"
       },
+      {
+        "name": "Intermountain Nursery",
+        "address": "30443 Auberry Road Prather CA 93651",
+        "phone": "(559) 855-3113",
+        "website": "https://intermountainnursery.com",
+        "membership": "Bronze Membership",
+        "imageurl": "images/intermountain300.jpg"
+      },
+      {
+        "name": "Barnett Refrigeration",
+        "address": "1080 Cole Ave Ste 104 Clovis CA 93612",
+        "phone": "(559) 298-6730",
+        "website": "http://barnettrefrig.com",
+        "membership": "Gold Membership",
+        "imageurl": "images/barnettrefrigeration300.jpg"
+      },
+      {
+        "name": "HWY 168 Storage",
+        "address": "30455 Auberry Road Prather CA 93651",
+        "phone": "(559) 855-5491",
+        "website": "https://www.hwy168storage.com",
+        "membership": "Silver Membership",
+        "imageurl": "images/hwy168storage300.jpg"
+      },
+      {
+        "name": "Mountain Mutts Dog Gromming",
+        "address": "33171 Auberry Road Auberry CA 93602",
+        "phone": "(559) 760-2318",
+        "website": "https://www.mountainmutts.com",
+        "membership": "Bronze Membership",
+        "imageurl": "images/mountainmutts300.jpg"
+      },
+      {
+        "name": "TG Chiropractic",
+        "address": "29369 Auberry Road Ste 101 Prather CA 93631",
+        "phone": "(559) 855-8445",
+        "website": "http://www.tgchiropractic.com",
+        "membership": "Bronze Membership",
+        "imageurl": "images/tgchiropractic300.jpg"
+      },
+      {
+        "name": "The Mill Coffe House",
+        "address": "29369 Auberry Road Prather CA 93651",
+        "phone": "(559) 301-9926",
+        "website": "https://themillcoffee.com",
+        "membership": "Gold Membership",
+        "imageurl": "images/themillcoffee300.jpg"
+      },
+      {
+        "name": "Brase Contracting",
+        "address": "56780 Auberry Road Auberry CA 93602",
+        "phone": "(559) 360-6577",
+        "website": "https://brasecontracting.com",
+        "membership": "Silver Membership",
+        "imageurl": "images/brasecontracting300.jpg"
+      },
+      {
+        "name": "Sierra Vetrinary Hospital",
+        "address": "33041 Auberry Road Ste 110 Auberry CA 93602",
+        "phone": "(559) 855-3770",
+        "website": "https://www.sierravethospital.com",
+        "membership": "Silver Membership",
+        "imageurl": "images/sierravet300.jpg"
+      },
+      {
+        "name": "Central Sierra Pest Control",
+        "address": "54566 Road 200 North Fork CA 93643",
+        "phone": "(559) 658-6262",
+        "website": "http://centralsierraenterprise.com",
+        "membership": "Bronze Membership",
+        "imageurl": "images/centralsierrapest300.jpg"
+      }
     ]
   }

@@ -1,16 +1,15 @@
+
+// directory buttons
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
 	display.classList.add("list");
@@ -40,8 +39,9 @@ function buildBusinessCards(data) {
         let h2 = document.createElement('h2');
         let p = document.createElement('p');
         let p2 = document.createElement('p');
-        let p3 = document.createElement('p');
-        let p4 = document.createElement('p')
+        let p3 = document.createElement('a');
+        let p4 = document.createElement('p');
+        let div = document.createElement('div');
         let img = document.createElement('img');
                 
         h2.innerHTML = `${business.name}`;
@@ -50,11 +50,15 @@ function buildBusinessCards(data) {
         p3.innerHTML = `${business.website}`;
         p4.innerHTML = `${business.membership}`;
                 
+        p3.setAttribute('href', business.website)
+        
         img.setAttribute('src', business.imageurl);
         img.setAttribute('alt', `${business.name} business logo`);
         img.setAttribute('loading', 'lazy');
                 
-        card.append(img);
+        card.append(div);
+        div.append(img);
+        
         card.append(h2);
         card.append(p);
         card.append(p2);

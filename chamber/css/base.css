@@ -422,3 +422,78 @@ textarea:invalid {
   text-align: center;
   background-color: #DFD5A5;
 }
+
+
+/* Directory page */
+.directcontent {
+  background-color: #DFD5A5;
+}
+
+.cardbanner {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardbanner button {
+  width: 60px;
+  height: 60px;
+  margin: .5rem;
+  background-color: #628395;
+  border-radius: 5px;
+}
+
+.cardbanner button:hover {
+  background-color: #CF995F;
+}
+
+.cards {
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cards section {
+  background-color: #628395;
+  border: 2px solid #c6c6c6;
+  border-radius: 5px;
+}
+
+.cards div{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cards img {
+  max-height: 150px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* used for layout buttons */
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+  grid-template-columns: 1fr;
+	align-items: center;
+  text-align: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.list section div {
+	display: none;
+}
