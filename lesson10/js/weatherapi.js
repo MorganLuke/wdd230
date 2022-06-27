@@ -5,7 +5,7 @@ const captionDesc = document.querySelector('figcaption');
 const url = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=78ea36f22f23c953dc7938bb10ac87bc';
 
 // fetches the data from api and calls displayResults function
-async function apiFetch(url) {
+async function apiFetch() {
     try {
       const response = await fetch(url);
       if (response.ok) {
@@ -45,6 +45,6 @@ function  displayResults(weatherData) {
         document.getElementById('current-temp').style.color = 'blue';
 }
 
-apiFetch(url);
+apiFetch();
 
 
