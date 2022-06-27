@@ -2,12 +2,12 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=78ea36f22f23c953dc7938bb10ac87bc';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=78ea36f22f23c953dc7938bb10ac87bc';
 
 // fetches the data from api and calls displayResults function
-async function apiFetch() {
+async function apiFetch(apiURL) {
     try {
-      const response = await fetch(url);
+      const response = await fetch(apiURL);
       if (response.ok) {
         const data = await response.json();
         // console.log(data); // this is for testing the call
@@ -45,6 +45,6 @@ function  displayResults(weatherData) {
         document.getElementById('current-temp').style.color = 'blue';
 }
 
-apiFetch();
+apiFetch(url);
 
 
