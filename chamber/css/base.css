@@ -259,13 +259,13 @@ footer {
   position: absolute;
   top: 8px;
   left: 16px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .join-cham {
   position: absolute;
-  bottom: 60px;
-  right: 50px;
+  bottom: 30px;
+  right: 25px;
   border: 2px solid #c6c6c6;
 	padding: 1rem;
 	box-shadow: 0 0 5px #333;
@@ -331,7 +331,7 @@ footer {
 }
 
 #temph3 {
-  padding: .5rem;
+  padding: .5rem 1rem .5rem .5rem;
 }
 
 #temph3 {

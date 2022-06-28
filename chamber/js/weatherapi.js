@@ -48,14 +48,13 @@ function  displayResults(weatherData) {
 
 
     // windchill
-    let temperature = parseFloat(weatherData.main.temp);
-    let windspeed = parseFloat(weatherData.wind.speed);
+    let temperature = weatherData.main.temp;
+    let windspeed = weatherData.wind.speed;
     let windchill = "";
     
     
     if (temperature <= 50 && windspeed > 3) {
-      windchill = windChill(temperature, windspeed);
-      windchill = `${windchill}&#176;F`;
+      windchill = `${windChill(temperature, windspeed)}&#176;F`;
     } 
     else {
       windchill = "N/A";
@@ -64,11 +63,11 @@ function  displayResults(weatherData) {
     //windspeed and windchill output
     document.querySelector('#windspeed').innerHTML = windspeed.toFixed();
     document.querySelector("#windchill").innerHTML = windchill;
-    
-    // windchill claculations
-    function windChill(temp, speed) {
-      return Math.round(35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * Math.pow(speed, 0.16)));
-    }
+}
+
+// windchill calculations
+function windChill(temp, speed) {
+  return Math.round(35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * Math.pow(speed, 0.16)));
 }
 
 apiFetch(url);

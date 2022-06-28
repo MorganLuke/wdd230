@@ -71,6 +71,7 @@ footer {
       .hero {
         grid-column: 1 / 4;
       }
+
       .spotlight {
         grid-column: 1/4;
         grid-row: 3;
@@ -91,7 +92,7 @@ footer {
       }
 
       .join {
-		display: block;
+    		display: block;
         grid-column: 1/4;
         grid-row: 4;
       }
@@ -101,6 +102,9 @@ footer {
         grid-row: 2;
       }
 
+      .hero h2 {
+        font-size: 3rem;
+      }
 
 
 
