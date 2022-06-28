@@ -96,14 +96,24 @@
                         <p class="spot-contact">(559)559-5959 - Auberry Rd. & HWY 168</p>
                     </section>
                 </div>
+
+
+
                 <div class="weather">
                     <h2>Weather</h2>
-                    <picture><img src="images/weathericon.png" alt=""></picture>
-                    <h3><span id="temperature">30</span>&#176;F</h3>
-                    <h3>Partly Cloudy</h3>
-                    <p>Wind Speed: <span id="windspeed">4</span> mph</p>
+                    <div class="weather-icon-temp">
+                        <img src="" alt="" id="weather-icon" />
+                        <h3 id="temph3"><span id="current-temp"></span>&#176;F</h3>
+                    </div>
+                    <p><span id="currentcondition"></span></p>
+                    
+                    <!-- <picture><img src="images/weathericon.png" alt=""></picture> -->
+                    <!-- <h3>Partly Cloudy</h3> -->
+                    <p>Wind Speed: <span id="windspeed"></span> mph</p>
                     <p>Wind Chill: <span id="windchill"></span></p>
                 </div>
+
+
                 <div class="join">
                     <button class="join-us" onclick="window.location.href='join.html';">Join Us!</button>
                     <p>Discover how to join the Auberry Chamber of Commerce and how it will benefit your organization!</p>
@@ -137,13 +147,14 @@
             <div class="contact-info">
                 <p><a href = "mailto:info@auberrychamber.com">info@auberrychamber.com</a></p>
                 <p><a href="tel:+13335657801">+1 333 565 7801</a></p>
-                <p><a href="https://goo.gl/maps/1Y3TK24JyqKDiLmk7"> Location Map</a></p>
+                <p><a href="https://goo.gl/maps/1Y3TK24JyqKDiLmk7">Location Map</a></p>
             </div>
             <p class="footer-copy">&copy; <span id="currentDate"></span> Auberry Chamber | Morgan Luke | WDD 230 Project | 
-                Last Modification: <span id="update"></span></p>
+                Last Modification: <span id="update"></span><a href="https://openweathermap.org/"> | OpenWeatherMap.org</a></p>
             <script src="js/main.js"></script>
-            <script src="js/windchill.js"></script>
+            <!-- <script src="js/windchill.js"></script> -->
             <script src="js/bannerpopup.js"></script>
+            <script src="js/weatherapi.js"></script>
         </footer>
         </div>
 </body>

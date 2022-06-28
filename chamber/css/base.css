@@ -317,17 +317,36 @@ footer {
   top: 55%;
 }
 
-.weather :nth-child(2) {
+.weather-icon-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weather-icon {
+  width: 75px;
+  padding: .5rem;
+}
+
+#temph3 {
+  padding: .5rem;
+}
+
+#temph3 {
   font-size: 3rem;
-  color: white;
-  margin: 1rem;
+  margin: 0;
 }
 
-.weather img {
-  max-width: 300px;
-  margin: 1rem;
+#currentcondition {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1rem;
 }
 
+.weather p {
+  padding: 1rem;
+  font-size: 1rem;
+}
 
 
 /* Discover Page */
