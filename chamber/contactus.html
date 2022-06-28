@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory of Members of the Auberry Chamber of Commerce">
-    <title>Directory - Auberry Chamber of Commerce</title>
+    <meta name="description" content="Contact the Auberry Chamber of Commerce">
+    <title>Contact Us - Auberry Chamber of Commerce</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,15 +43,42 @@
         </header>
 
         <main>
-            <div class="directcontent">
-                <div class="cardbanner">
-                    <h1>Business Directory</h1>
-                    <div><button id="grid"><span>&#9871;</span></button>
-                        <button id="list"><span>&#9868;</span></button>
-                    </div>
+            <div class="contactcontent">
+                <div class='formcontent'>
+                    <h1>Contact Form</h1>
+                    <p>* Indicates required field</p>
+                    <form class="form" action="contactthankyou.html" method="get">
+                        <!-- hidden date and time logged when form loads -->
+                        <input type="hidden" id="loadDate" name="loadDate">
+
+                        <!-- name -->
+                        <label for="fname">Name*</label>
+                        <input type="text" id="fname" name="fname" minlength="2" maxlength="40" pattern="^[A-Za-z- ]*$" required autofocus/>
+
+                        <!-- email address -->
+                        <label for="email">Email address*</label>
+                        <input type="email" id="email" name="email" maxlength="30" placeholder="myemailname@gmail.com" required/>
+                        
+                        <!-- Question description -->
+                        <label for="businessDesc">Question/Concern*</label>
+                        <textarea id="businessDesc" name="businessDesc" maxlength="140" rows="4" required></textarea>
+
+                        <!-- submit button -->
+                        <button id="btnSubmit" type="submit">Submit</button>
+                    </form>
                 </div>
-                <div class="cards"></div>
-                
+                <div class="contactus">
+                    <h2>Contact Us</h2>
+                    <h3>Address</h3>
+                    <p>10 Auberry Rd.</p>
+                    <p>Auberry, CA 93602</p>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+13335657801">+1 333 565 7801</a></p>
+                    <h3>Email</h3>
+                    <p><a href = "mailto:info@auberrychamber.com">info@auberrychamber.com</a></p>
+
+
+                </div>
             </div>
         </main>
         
@@ -74,7 +101,7 @@
             <p class="footer-copy">&copy; <span id="currentDate"></span> Auberry Chamber | Morgan Luke | WDD 230 Project | 
                 Last Modification: <span id="update"></span></p>
             <script src="js/main.js"></script>
-            <script src="js/directory.js"></script>
+            <script src="js/loaddate.js"></script>
         </footer>
         </div>
 </body>

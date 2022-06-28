@@ -42,7 +42,6 @@ function  displayResults(weatherData) {
     if (weatherData.main.temp > 70 && weatherData.main.temp < 85)
         document.getElementById('temph3').style.color = 'orange';
     else if (weatherData.main.temp >= 85)
-        // document.getElementById('current-temp').style.color = 'red';
         document.getElementById('temph3').style.color = 'red';
     else
         document.getElementById('temph3').style.color = 'blue';

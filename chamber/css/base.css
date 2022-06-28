@@ -133,7 +133,9 @@ nav ul.open {
   padding: .5rem;
 }
 
-
+nav ul.open {
+  grid-row: 2;
+}
 
 
 
@@ -350,7 +352,7 @@ footer {
 
 
 /* Discover Page */
-.discontent, .joincontent{
+.discontent, .joincontent {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -376,6 +378,39 @@ footer {
 }
 
 
+/* Contact Page */
+.contactcontent {
+  padding: 2rem;
+  background-color: #DFD5A5;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.formcontent {
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 1px #888;
+  border: 2px solid #c6c6c6;
+  padding: 1rem;
+  background-color: #628395;
+}
+
+.formcontent form {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+}
+
+.contactus {
+  text-align: center;
+}
+
+.contactus h2, h3 {
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+
+
+
 
 /* Join Page */
 
@@ -391,14 +426,14 @@ footer {
   margin: 1rem;
 }
 
-.joincontent label {
+.joincontent label, .formcontent label {
   grid-column: 1/2;
   text-align: right;
   font-weight: 700;
   margin-left: 1rem;
 }
 
-.joincontent input, textarea {
+.joincontent input, textarea, .formcontent input {
 	margin: 1rem;
 	padding: 0.4em;
 	font-style: italic;
@@ -408,9 +443,17 @@ footer {
   grid-column: 2/3;
 }
 
+.memberships input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: .5rem;
+}
+
+
 .memberships legend {
   font-size: 2rem;
 }
+
 
 .memberships {
   margin: 0 1rem 1rem 1rem;

@@ -84,10 +84,18 @@ nav ul#primaryNav {
   flex-direction: row;
 }
 
-/* used for layout buttons */
+/* directory - used for layout buttons */
 .list section {
   grid-template-columns: repeat(5, 1fr);
   text-align: left;
 }
+
+/* contact us page */
+.contactcontent {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
 
 }
