@@ -1,3 +1,6 @@
+
+
+/* Header */
 header {
 	background-color: #628395;
 	padding: 5px 0;
@@ -71,8 +74,7 @@ a:link, a:visited {
 
 
 
-
-/* Nav */
+/* Navigation */
 nav button {
   margin: .2rem 2vw;
   background: transparent;
@@ -139,6 +141,7 @@ nav ul.open {
 
 
 
+
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -157,6 +160,7 @@ img {
 
 } 
 
+/* Footer */
 footer {
 	align-items: center;
 	justify-content: center;
@@ -189,7 +193,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: .5rem;
-    grid-auto-rows: minmax(300px, auto);
+    /* grid-auto-rows: minmax(300px, auto); */
     padding: 1rem;
     background-color: #DFD5A5;
   }
@@ -214,7 +218,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1.5rem;
-    grid-auto-rows: minmax(300px, auto);
+    /* grid-auto-rows: minmax(300px, auto); */
   }
 
   .spotlight section {
