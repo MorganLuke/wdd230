@@ -42,9 +42,9 @@ function  displayResults(weatherData) {
     if (weatherData.main.temp > 70 && weatherData.main.temp < 85)
         document.getElementById('temph3').style.color = 'orange';
     else if (weatherData.main.temp >= 85)
-        document.getElementById('temph3').style.color = 'red';
+        document.getElementById('temph3').style.color = '#330000';
     else
-        document.getElementById('temph3').style.color = 'blue';
+        document.getElementById('temph3').style.color = '#00005C';
 
 
     // windchill

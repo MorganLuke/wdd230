@@ -32,17 +32,17 @@ nav ul#primaryNav {
 
 .event {
   grid-column: 1 / 2;
-  grid-row: 1;
+  grid-row: 1/2;
 }
 
 .hero {
   grid-column: 2 / 3;
-  grid-row: 1 / 3;
+  grid-row: 1/3;
 }
 
 .spotlight {
   grid-column: 3/4;
-  grid-row: 1 / 4;
+  grid-row: 1/4;
   grid-template-columns: 1fr;
 }
 
@@ -56,17 +56,17 @@ nav ul#primaryNav {
 
 .weather {
   grid-column: 1/2;
-  grid-row: 2;
+  grid-row: 2/3;
 }
 
 .join {
   grid-column: 1/2;
-  grid-row: 3;
+  grid-row: 3/4;
 }
 
 .news {
   grid-column: 2/3;
-  grid-row: 3;
+  grid-row: 3/4;
 }
 
 .joincontent form{
@@ -82,7 +82,13 @@ nav ul#primaryNav {
 .cardbanner {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
+
+.cardbanner h2 {
+  margin: auto;
+}
+
 
 /* directory - used for layout buttons */
 .list section {
@@ -95,7 +101,19 @@ nav ul#primaryNav {
   grid-template-columns: 1fr 1fr;
 }
 
+.hero h2 {
+  top: 8px;
+  left: 16px;
+  font-size: 3.5rem;
+}
 
+.join-cham {
+  bottom: 30px;
+  right: 25px;
+}
 
+.footer-logo {
+  display: flex;
+}
 
 }
