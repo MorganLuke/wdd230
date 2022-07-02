@@ -96,10 +96,7 @@ nav ul#primaryNav {
   text-align: left;
 }
 
-/* contact us page */
-.contactcontent {
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .hero h2 {
   top: 8px;

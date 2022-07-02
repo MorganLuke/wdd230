@@ -24,6 +24,12 @@
   padding-top: .75rem;
 }
 
+/* contact us page */
+.contactcontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* hover effect Images Discover Page*/
 /* .discontent picture:hover {box-shadow: 0 0 50px #333;} */
 

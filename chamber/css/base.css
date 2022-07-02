@@ -398,8 +398,8 @@ footer {
 .contactcontent {
   padding: 2rem;
   background-color: #DFD5A5;
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr; */
 }
 
 .formcontent {
@@ -412,8 +412,14 @@ footer {
 }
 
 .formcontent form {
-  display: grid;
-  grid-template-columns: .5fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: .5fr 1fr; */
+  max-width: 300px;
+  margin: auto;
+}
+
+.formcontent h2, p {
+  text-align: center;
 }
 
 .contactus {
@@ -485,11 +491,11 @@ footer {
 }
 
 input:invalid {
-  box-shadow: 0 0 5px 1px coral;
+  /* box-shadow: 0 0 5px 1px coral; */
 }
 
 textarea:invalid {
-  box-shadow: 0 0 5px 1px coral;
+  /* box-shadow: 0 0 5px 1px coral; */
 }
 
 
