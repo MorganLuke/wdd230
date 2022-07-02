@@ -81,7 +81,7 @@
       .spotlight {
         grid-column: 1/4;
         grid-row: 3/4;
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
       }
 
 	  .spot-1 {
@@ -89,7 +89,7 @@
 	  }
 
 	  .spot-2 {
-		  grid-column: 2/3;
+		  /* grid-column: 2/3; */
 	  }
 
       .weather {

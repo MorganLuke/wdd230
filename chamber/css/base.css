@@ -203,7 +203,7 @@ footer {
 /* main grid */
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     gap: .5rem;
     /* grid-auto-rows: minmax(300px, auto); */
     padding: 1rem;
@@ -238,7 +238,7 @@ footer {
   }
 
   .spot-3 {
-      display: none;
+      /* display: none; */
   }
   
   .weather {
@@ -538,7 +538,7 @@ textarea:invalid {
   grid-gap: 1rem;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .cards section {

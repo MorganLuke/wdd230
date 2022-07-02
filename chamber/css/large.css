@@ -47,7 +47,7 @@ nav ul#primaryNav {
 }
 
 .spot-2, .spot-3 {
-  grid-column: 1/2;
+  /* grid-column: 1/2; */
 }
 
 .spot-3 {

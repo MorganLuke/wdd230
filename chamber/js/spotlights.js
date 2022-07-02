@@ -4,7 +4,6 @@
 const URL = 'json/data.json';
 const cards = document.querySelector('.cards');
 
-
 async function getBusinesses() {
     let response = await fetch(URL);
     if (response.ok) {
@@ -49,7 +48,6 @@ function buildBusinessCards(data) {
             card.append(p2);
             card.append(p3);
             card.append(p4);
-
             cards.append(card);
         }
     });
