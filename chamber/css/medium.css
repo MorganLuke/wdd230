@@ -34,36 +34,6 @@
 /* .discontent picture:hover {box-shadow: 0 0 50px #333;} */
 
 
-/* footer  */
-/* footer {
-  display: grid;
-  grid-template-columns: .5fr 1fr 1fr;
-} */
-
-/* .footer-logo {
-  grid-column: 1/2;
-  justify-content: right;
-} */
-
-/* .address {
-  grid-column: 2/3;
-  display: flex;
-	flex-flow: column;
-}
-
-.contact-info {
-  grid-column: 3/4;
-  display: flex;
-	flex-flow: column;
-} */
-
-/* .footer-copy{
-    grid-column: 1/4;
-} */
-
-
-
-
 /* main grid */
 	.home-grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -81,16 +51,7 @@
       .spotlight {
         grid-column: 1/4;
         grid-row: 3/4;
-        /* grid-template-columns: 1fr 1fr; */
       }
-
-	  .spot-1 {
-		  grid-column: 1/2;
-	  }
-
-	  .spot-2 {
-		  /* grid-column: 2/3; */
-	  }
 
       .weather {
         grid-column: 3/4;
