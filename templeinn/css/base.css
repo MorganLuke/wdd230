@@ -1,0 +1,110 @@
+header,
+footer {
+  background-color: #002d72;
+  color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {display: none;}
+
+.templeLogo {
+    height: 50px; 
+    width: 50px;
+    padding: .5rem;
+}
+
+.availButton {
+    border-radius: 10px;
+    padding: 1rem;
+    display: none;
+    margin: 1rem;}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3, p {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav button {
+  margin: 0.2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+nav {
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2vw;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+nav a:hover {background-color: #cf995f;}
+
+nav ul li.active a {
+  /* background-color: rgba(0,0,0,0.2); */
+  /* color: #fff; */
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+nav ul.open {
+  grid-row: 2/3;
+}

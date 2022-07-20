@@ -1,0 +1,40 @@
+@media (min-width: 38em) {
+
+
+
+header {
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr;}
+
+.templeLogo {
+    height: 100px; 
+    width: 100px;
+}
+
+h1 {display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,16 @@
+@media (min-width: 65em) {
+  nav button {
+    display: none;
+  }
+
+  nav ul#primaryNav {
+    display: flex;
+    justify-content: center;
+  }
+
+    header {grid-template-columns: .5fr 1.5fr 3fr 1fr;}
+
+    .availButton {display: block;}
+
+    
+}
