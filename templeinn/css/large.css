@@ -8,9 +8,21 @@
     justify-content: center;
   }
 
-    header {grid-template-columns: .5fr 1.5fr 3fr 1fr;}
+  header {
+    grid-template-columns: 0.5fr 1.5fr 3fr 1fr;
+  }
 
-    .availButton {display: block;}
+  .availButton {
+    display: block;
+  }
 
-    
+  footer {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .map {
+    display: block;
+  }
+  
+  .social img { width: 50px;}
 }
