@@ -19,11 +19,14 @@ h1, .map {display: none;}
 }
 
 .availButton {
-    border-radius: 10px;
-    padding: 1rem;
-    display: none;
-    margin: 1rem;}
+  display: none;
+  background-color: #efb50f;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+}
 
+button:hover {background-color: #CF995F;}
 
 body {
   font-family: "Roboto", sans-serif;
