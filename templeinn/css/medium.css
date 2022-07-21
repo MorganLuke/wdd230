@@ -18,7 +18,11 @@ footer{grid-template-columns: repeat(3, 1fr);}
 
 .social img { width: 30px;}
 
-
+.weather {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
 
 

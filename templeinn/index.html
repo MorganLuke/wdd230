@@ -16,8 +16,10 @@
     <link type="text/css" rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <span id="weatherAlert">weather alert</span>
+    <div id="weatherAlert">
+    <span>Weather Alert!</span>
     <button id="close">❌</button>
+    </div>
     <header>
         <a href="index.html"><img class="templeLogo" src="images/templeLogo320px.png" alt="Temple Inn & Suites Logo"></a>
         <h1>Temple Inn & Suites</h1>
@@ -29,15 +31,40 @@
                 <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
-        <button class="availButton">Check Availability</button>
+        <button class="availButton" onclick="window.location.href='reservations.html';">Check Availability</button>
     </header>
     <main>
-        <img src="images/laieTemple1440px.jpg" alt="Laie Hawaii Temple Image">
-        <h2></h2>
+        <img src="images/laieTemple1440pxcta.jpg" alt="Laie Hawaii Temple Image">
+        <!-- <h2 class="callToAction">Come Stay near The Temples of the Lord</h2> -->
+        
+        <h3 class="forcast">3 Day Forcast</h3>
         <div class="weather">
-            <h3>3 Day Forcast</h3>
+            
+            <section>
+                <span id="today"></span>
+                <img src="" alt="" id="todayIcon">
+                <h3 id="temp1"><span id="todayTemp">3</span>&#176;F</h3>
+                <p>Condition: <span id="todayCondition"></span></p>
+                <p>Humidity: <span id="todayHumidity"></span>%</p>
+            </section>
+            <section>
+                <span id="dayTwo"></span>
+                <img src="" alt="" id="dayTwoIcon">
+                <h3 id="temp2"><span id="dayTwoTemp">3</span>&#176;F</h3>
+                <p>Condition: <span id="dayTwoCondition"></span></p>
+                <p>Humidity: <span id="dayTwoHumidity"></span>%</p>
+            </section>
+            <section>
+                <span id="dayThree"></span>
+                <img src="" alt="" id="dayThreeIcon">
+                <h3 id="temp3"><span id="dayThreeTemp">3</span>&#176;F</h3>
+                <p>Condition: <span id="dayThreeCondition"></span></p>
+                <p>Humidity: <span id="dayThreeHumidity"></span>%</p>
+            </section>
+            
         </div>
         <div class="templespot">
+
         </div>
         <div class="freeamenities"></div>
     </main>
@@ -55,11 +82,13 @@
         <div class="social">
             <a href="https://www.facebook.com"><img src="images/fbIcon128px.png" alt="Facebook Logo"></a>
             <a href="https://www.instagram.com"><img Src="images/instagramIcon128px.png" alt="Instagram Logo"></a>
-            <a href="https://www.twiter.com"><img src="images/twiterIcon128px.png" alt="Twiter Logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twiterIcon128px.png" alt="Twitter Logo"></a>
          </div>
         
     </footer>
+    Last Date Modified: <span id="update"></span>
     <script src="js/main.js"></script>
     <script src="js/weatheralert.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 </html>

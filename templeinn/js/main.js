@@ -6,3 +6,7 @@ function toggleMenu () {
 
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
+
+
+// last modified date
+document.querySelector("#update").innerHTML = document.lastModified;
