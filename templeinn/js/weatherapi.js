@@ -68,9 +68,9 @@ function  displayResults(weatherData) {
     if (weatherData.daily[0].temp.max > 70 && weatherData.daily[0].temp.max < 85)
         document.getElementById('temp1').style.color = '#FFA500';
     else if (weatherData.daily[0].temp.max >= 85)
-        document.getElementById('temp1').style.color = 'red';
+        document.getElementById('temp1').style.color = '#E60000';
     else
-        document.getElementById('temp1').style.color = 'blue';
+        document.getElementById('temp1').style.color = '#002D72';
 
 
     // day two weather
@@ -93,9 +93,9 @@ function  displayResults(weatherData) {
     if (weatherData.daily[1].temp.max > 70 && weatherData.daily[1].temp.max < 85)
         document.getElementById('temp2').style.color = '#FFA500';
     else if (weatherData.daily[1].temp.max >= 85)
-        document.getElementById('temp2').style.color = 'red';
+        document.getElementById('temp2').style.color = '#E60000';
     else
-        document.getElementById('temp2').style.color = 'blue';
+        document.getElementById('temp2').style.color = '#002D72';
 
 
     // day three weather
@@ -118,9 +118,9 @@ function  displayResults(weatherData) {
     if (weatherData.daily[2].temp.max > 70 && weatherData.daily[2].temp.max < 85)
         document.getElementById('temp3').style.color = '#FFA500';
     else if (weatherData.daily[2].temp.max >= 85)
-        document.getElementById('temp3').style.color = 'red';
+        document.getElementById('temp3').style.color = '#E60000';
     else
-        document.getElementById('temp3').style.color = 'blue';
+        document.getElementById('temp3').style.color = '#002D72';
     
 
     // trying to assign a weather alert. Needs more development
