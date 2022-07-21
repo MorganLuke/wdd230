@@ -26,6 +26,8 @@ const dayThreeTemp = document.querySelector('#dayThreeTemp');
 const dayThreeCondition = document.querySelector('#dayThreeCondition');
 const dayThreeHumidity = document.querySelector('#dayThreeHumidity');
 
+const weatherAlert = document.querySelector('#weatherAlert');
+
 const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.983120&lon=-77.095413&units=imperial&appid=78ea36f22f23c953dc7938bb10ac87bc';
 
 // fetches the data from api and calls displayResults function
@@ -119,8 +121,10 @@ function  displayResults(weatherData) {
         document.getElementById('temp3').style.color = 'red';
     else
         document.getElementById('temp3').style.color = 'blue';
+    
 
-
+    // trying to assign a weather alert. Needs more development
+    //  weatherAlert.innerHTML = weatherData.alerts.description;
 
 
 

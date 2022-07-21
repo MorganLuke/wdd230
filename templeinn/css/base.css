@@ -178,3 +178,20 @@ iframe {padding: .75rem;}
 #today, #dayTwo, #dayThree {
   font-weight: bold;
 }
+
+.templespot {
+  align-items: center;
+  margin: 3rem 0;
+  background-color: #002d72;
+  color: #ffffff;
+}
+
+.templespot p {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.templespot h3 {
+  padding: 1rem;
+}
+

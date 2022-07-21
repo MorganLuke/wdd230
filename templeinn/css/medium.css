@@ -1,43 +1,29 @@
 @media (min-width: 38em) {
-
-
-
-header {
+  header {
     display: grid;
-    grid-template-columns: .5fr 2fr .5fr;}
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+  }
 
-.templeLogo {
-    height: 100px; 
+  .templeLogo {
+    height: 100px;
     width: 100px;
-}
+  }
 
-h1 {display: block;}
+  h1 {
+    display: block;
+  }
 
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-footer{grid-template-columns: repeat(3, 1fr);}
+  .social img {
+    width: 30px;
+  }
 
-.social img { width: 30px;}
-
-.weather {
+  .weather {
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

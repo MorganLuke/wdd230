@@ -24,7 +24,16 @@
     display: block;
   }
 
-  .social img { width: 50px;}
+  .social img {
+    width: 50px;
+  }
 
-  
+  .templespot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .templespot img {
+    padding: 1rem;
+  }
 }
